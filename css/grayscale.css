@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Grayscale v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/grayscale)
+ * Start Bootstrap - Digital Stories v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
@@ -124,8 +124,8 @@ a {
 
 .btn-circle {
   font-size: 26px;
-  width: 100px;
-  height: 100px;
+  width: 55px;
+  height: 55px;
   margin-top: 15px;
   line-height: 45px;
   -webkit-transition: background 0.3s ease-in-out;
@@ -182,16 +182,6 @@ a {
     border: 1px solid #42DCA3;
     outline: none;
     background-color: #42DCA3; }
-
-#military {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-#military img {
-  align-self: center;
-}
 
 ul.banner-social-buttons {
   margin-top: 0; }
