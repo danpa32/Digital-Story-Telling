@@ -1,0 +1,119 @@
+[
+    {
+        "nom":"Tenerif airport disaster",
+        "vols":
+        [
+            {
+                "nom":"KLM Flight 4805",
+                "departure":
+                {
+                    "nom":"Schiphol Airport",
+                    "latitude":"52°18′29″N",
+                    "longitude":"4°45′39″E"
+                },
+                "destination":
+                {
+                    "nom":"Gran Canaria Airport",
+                    "latitude":"27°55′55″N",
+                    "longitude":"15°23′12″W"
+                }
+            },
+            {
+                "nom":"Pan Am Flight 1736",
+                "departure":
+                {
+                    "nom":"Los Angeles Airport",
+                    "latitude":"33°56′34″N",
+                    "longitude":"118°24′29″W"
+                },
+                "destination":
+                {
+                    "nom":"Gran Canaria International Airport",
+                    "latitude":"27°55′55″N",
+                    "longitude":"15°23′12″W"
+                }
+            }
+        ],
+        "crashCoord":
+        {
+            "nom":"Los Rodeos Airport",
+            "longitude":"28°28′58″N", 
+            "latitude":"016°20′30″W"
+        },
+        "total fatalities":"583",
+        "info":"On March 27, 1977, two Boeing 747 passenger jets, KLM Flight 4805 and Pan Am Flight 1736, collided on the runway at Los Rodeos Airport (now Tenerife North Airport), on the Spanish island of Tenerife, Canary Islands, killing 583 people in the deadliest accident in aviation history.\nA terrorist incident at Gran Canaria Airport had caused many flights to be diverted to Los Rodeos, including the two accident aircraft. The airport quickly became congested with parked aircraft blocking the only taxiway and forcing departing aircraft to taxi on the runway instead. Patches of thick fog were also drifting across the airfield, preventing aircraft and control tower from seeing each other.\nThe collision occurred when KLM 4805 initiated its takeoff run while Pan Am 1736, shrouded in fog, was still on the runway and about to turn off onto the taxiway. The impact and ensuing fire killed everyone on board the KLM jet and most of the occupants of the Pan Am, leaving only 61 survivors from the aircraft's front section.\nThe subsequent investigation by Spanish authorities concluded that the primary cause of the accident was the KLM captain's decision to take off in the mistaken belief that a takeoff clearance from air traffic control (ATC) had been issued.[3] Dutch investigators placed a greater emphasis on mutual misunderstanding in radio communications between the KLM crew and ATC but ultimately, KLM admitted their crew was responsible for the accident and the airline agreed to financially compensate the victims' relatives.\nThe disaster had a lasting influence on the industry. An increased emphasis was placed on the importance of using standardized phraseology in radio communications. Cockpit procedures were also reviewed, contributing to the establishment of crew resource management as a fundamental part of airline pilots' training."
+    },
+    {
+        "nom":"Japan Airlines Flight 123",
+        "vols":
+        [
+            {
+                "nom":"Japan Airlines Flight 123",
+                "departure":
+                {
+                    "nom":"Haneda Airport",
+                    "latitude":"35°33′12″N",
+                    "longitude":"139°46′52″E"
+                },
+                "destination":
+                {
+                    "nom":"Osaka International Airport",
+                    "latitude":"34°47′04″N",
+                    "longitude":"135°26′21″E"
+                }
+            }
+        ],
+        "crashCoord":
+        {
+            "nom":"Mont Osutaka",
+            "longitude":"36°00′57″N",
+            "latitude":"138°41′17″E"
+        },
+        "total fatalities":"520",
+        "info":"Japan Airlines Flight 123 was a scheduled domestic Japan Airlines passenger flight from Tokyo's Haneda Airport to Osaka International Airport, Japan. On Monday, August 12, 1985, a Boeing 747SR operating this route suffered a sudden decompression 12 minutes into the flight and crashed into two ridges of Mount Takamagahara in Ueno, Gunma Prefecture, 100 kilometres (62 miles) from Tokyo 32 minutes later. The crash site was on Osutaka Ridge, near Mount Osutaka.\nJapan's Aircraft Accident Investigation Commission officially concluded that the rapid decompression was caused by a faulty repair after a tailstrike incident during a landing at Osaka Airport seven years earlier. A doubler plate on the rear bulkhead of the plane was improperly repaired, compromising the plane's airworthiness. Cabin pressurization continued to expand and contract the improperly repaired bulkhead until the day of the accident, when the faulty repair finally failed, causing the rapid decompression that ripped off a large portion of the tail and caused the loss of hydraulic controls to the entire plane.\nCasualties of the crash included all 15 crew members and 505 of the 509 passengers; some passengers survived the initial crash but subsequently died of their injuries hours later, mostly due to delays in the rescue operation. It remains the deadliest single-aircraft accident in aviation history, the second-deadliest Boeing 747 accident and the second-deadliest aviation accident after the 1977 Tenerife airport disaster."
+    },
+    {
+        "nom":"Charkhi Dadri mid-air collision",
+        "vols":
+        [
+            {
+                "nom":"Saudi Arabian Airlines - Boeing 747-168B",
+                "departure":
+                {
+                    "nom":"Indira Gandhi International Airport",
+                    "latitude":"28°34′07″N",
+                    "longitude":"77°06′44″E"
+                },
+                "destination":
+                {
+                    "nom":"Dhahran International Airport",
+                    "latitude":"26°15′45.2″N",
+                    "longitude":"50°09′11.0″E"
+                }
+            },
+            {
+                "nom":"Kazakhstan Airlines - Ilyushin Il-76TD",
+                "departure":
+                {
+                    "nom":"Shymkent International Airport",
+                    "latitude":"42°21′54″N",
+                    "longitude":"69°28′34″E"
+                },
+                "destination":
+                {
+                    "nom":"Indira Gandhi International Airport",
+                    "latitude":"28°34′07″N",
+                    "longitude":"77°06′44″E"
+                }
+            }
+        ],
+        "crashCoord":
+        {
+            "nom":"Charkhi Dadri",
+            "latitude":"27°45'26″N",
+            "longitude":"76°15'55″E"
+        },
+        "total fatalities":"312",
+        "info":"The Saudi Arabian Airlines (Saudia) Boeing 747-168B, registration HZ-AIH, was flying the first leg of a scheduled international Delhi–Dhahran–Jeddah passenger service as Flight SVA763 with 312 occupants on board;[6] the Kazakhstan Airlines Ilyushin Il-76TD, registration UN-76435, was on a charter service from Chimkent to Delhi as KZA1907. SVA763 departed Delhi at 18:32 local time.[5] KZA1907 was, at the same time, descending to land at Delhi. Both flights were controlled by approach controller VK Dutta. The crew of SVA763 consisted of Captain Khalid Al Shubaily, First Officer Nazir Khan, and Flight Engineer Edris.[8] On KZA1907, Gennadi Cherepanov served as the pilot and Egor Repp served as the radio operator.\nKZA1907 was cleared to descend to 15,000 feet (4,600 m) when it was 74 nautical miles (137 km) from the beacon of the destination airport while SVA763, travelling on the same airway as KZA1907 but in the opposite direction, was cleared to climb to 14,000 feet (4,300 m). About eight minutes later, around 18:40, KZA1907 reported having reached its assigned altitude of 15,000 feet (4,600 m) but it was actually lower, at 14,500 feet (4,400 m), and still descending. At this time, Dutta advised the flight : 'Identified traffic 12 o'clock, reciprocal Saudia Boeing 747, 10 nautical miles (19 km). Report in sight'.\nWhen the controller called KZA1907 again, he received no reply. He warned of the other flight's distance, but it was too late. The two aircraft had collided, the tail of KZA1907 cutting through SVA763's left wing and horizontal stabiliser. The crippled Boeing quickly lost control and went into a rapidly descending spiral with fire trailing from the wing. The Boeing broke up before crashing into the ground at 1,135 km/h (705 mph). The Ilyushin remained structurally intact as it went in a steady but rapid and uncontrolled descent until it crashed in a field. Rescuers discovered four critically injured passengers from the Ilyushin, but they all died soon afterwards. Two passengers from the Saudia flight survived the crash, still strapped to their seats, only to die of internal injuries soon after. In the end, all 312 people on board SVA763 and all 37 people on KZA1907 were killed."
+    }
+]
