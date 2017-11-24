@@ -1,0 +1,32 @@
+#map {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media(min-width:992px) {
+  .content-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: 0.5px;
+  stroke-opacity: 0.5;
+}
+
+.land {
+  fill: rgb(65, 65, 65);
+}
+
+.boundary {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 0.5px;
+}
