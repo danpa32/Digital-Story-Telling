@@ -251,6 +251,7 @@ ul.banner-social-buttons {
 }
 
 footer {
+  background: rgba(0, 0, 0, 1);
   padding: 50px 0;
   p {
     font-size: 14px;
@@ -281,4 +282,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: fade-out(white, .8);
+}
+
+#sections {
+  width: 50%;
+  background: rgba(0, 0, 0, 0.6)
 }

@@ -9,7 +9,16 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; }
+  z-index: -2; }
+
+#annotation {
+  position: fixed;
+  width: 50%;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6); }
 
 @media (min-width: 992px) {
   .content-section {
@@ -29,3 +38,14 @@
   fill: none;
   stroke: black;
   stroke-width: 0.5px; }
+
+.flightpaths {
+  fill: none;
+  stroke: white;
+  stroke-width: 6px;
+  stroke-linecap: round; }
+
+.placeCrash {
+  fill: white;
+  filter: drop-shadow(20px, 20px, 10px, red);
+  -webkit-filter: drop-shadow(20px, 20px, 10px, red); }
