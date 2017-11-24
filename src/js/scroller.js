@@ -39,11 +39,11 @@
       sectionPositions = [];
       let startPos;
       sections.each(function (d, i) {
-        const { top } = this.getBoundingClientRect();
+        const { top, bottom } = this.getBoundingClientRect();
         if (i === 0) {
           startPos = top;
         }
-        sectionPositions.push(top - startPos);
+        sectionPositions.push(bottom - startPos);
       });
       containerStart = container.node().getBoundingClientRect().top + window.pageYOffset;
     }
@@ -56,7 +56,7 @@
      *
      */
     function position() {
-      const pos = window.pageYOffset - 10 - containerStart;
+      const pos = window.pageYOffset - containerStart + window.innerHeight / 2;
       let sectionIndex = d3.bisect(sectionPositions, pos);
       sectionIndex = Math.min(sections.size() - 1, sectionIndex);
 
