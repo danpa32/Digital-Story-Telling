@@ -126,6 +126,8 @@
       return scroll;
     };
 
+    scroll.resize = resize;
+
     // @v4 There is now no d3.rebind, so this implements
     // a .on method to pass in a callback to the dispatcher.
     scroll.on = (action, callback) => {

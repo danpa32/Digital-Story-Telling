@@ -197,12 +197,16 @@ a {
   margin-bottom: 100px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid #42DCA3;
   border-radius: 10px;
+  
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
+
 
 .download-section {
   color: white;
