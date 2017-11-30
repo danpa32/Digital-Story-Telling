@@ -16,3 +16,12 @@
     return null;
   });
 }(window.jQuery)); // End of use strict
+
+function resizeIframe(obj) {
+  if (obj.style.height <= '250px') {
+    obj.style.height = '250px';
+  } else {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';    
+  }
+  obj.style.width = '100%';
+}
