@@ -96,6 +96,9 @@ gulp.task('copy', () => {
   gulp.src(['node_modules/d3-queue/build/*.js'])
     .pipe(gulp.dest('src/vendor/d3-queue'));
 
+  gulp.src(['node_modules/d3-tip/*.js'])
+    .pipe(gulp.dest('src/vendor/d3-tip'));
+
   gulp.src(['node_modules/topojson/dist/*.js'])
     .pipe(gulp.dest('src/vendor/topojson'));
 });
