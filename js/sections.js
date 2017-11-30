@@ -141,6 +141,17 @@
           .attr('class', 'boundary')
           .attr('d', path);
 
+        scroll.on('progress', (index, progress) => {
+          // plot.update(index, progress);
+        });
+
+        const tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-10, 0])
+          .html(d => `<span class="tipInfo">${d.info}</span>`);
+
+        map.call(tip);
+
         crashes.forEach((crash) => {
           const crashText = d3.select('#sections')
             .append('section')
@@ -161,35 +172,6 @@
               .append('p')
               .html(p);
           });
-
-          const sections = d3.select('#sections');
-          const scrollable = sections.selectAll('section');
-          scroll.container(sections);
-          scroll(scrollable);
-
-          // setup event handling
-          scroll.on('active', (index) => {
-            optionIndex = index;
-
-            // highlight current step text
-            scrollable.transition().style('opacity', (d, i) => ((i === index) ? 1 : 0.1));
-
-            update(options[index]);
-
-            // activate current section
-            // plot.activate(index);
-          });
-
-          scroll.on('progress', (index, progress) => {
-            // plot.update(index, progress);
-          });
-
-          const tip = d3.tip()
-            .attr('class', 'd3-tip')
-            .offset([-10, 0])
-            .html(d => `<span class="tipInfo">${d.info}</span>`);
-
-          map.call(tip);
 
           crash.vols.forEach((vol) => {
             const flightRoutes = {
@@ -240,6 +222,26 @@
               c.transition().duration(250).style('fill', 'white');
               tip.hide(d);
             });
+        });
+
+        const sections = d3.select('#sections');
+        const scrollable = sections.selectAll('section');
+
+        scrollable.selectAll('*').on('load', scroll.resize);
+        scroll.container(sections);
+        scroll(scrollable);
+
+        // setup event handling
+        scroll.on('active', (index) => {
+          optionIndex = index;
+
+          // highlight current step text
+          scrollable.transition().style('opacity', (d, i) => ((i === index) ? 1 : 0.1));
+
+          update(options[index]);
+
+          // activate current section
+          // plot.activate(index);
         });
       });
   }
