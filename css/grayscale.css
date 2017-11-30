@@ -147,7 +147,9 @@ a {
   margin-right: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: rgba(0, 0, 0, 0.6); }
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #42DCA3;
+  border-radius: 10px; }
 
 .download-section {
   color: white;

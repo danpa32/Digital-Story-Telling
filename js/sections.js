@@ -87,7 +87,7 @@
     },
   ];
   let optionIndex = 0;
-  
+
   function update(option) {
     if (world === undefined) return;
 
@@ -172,7 +172,7 @@
             optionIndex = index;
 
             // highlight current step text
-            scrollable.style('opacity', (d, i) => ((i === index) ? 1 : 0.1));
+            scrollable.transition().style('opacity', (d, i) => ((i === index) ? 1 : 0.1));
 
             update(options[index]);
 
@@ -184,7 +184,12 @@
             // plot.update(index, progress);
           });
 
-          const annotation = d3.select('#annotation');
+          const tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .offset([-10, 0])
+            .html(d => `<span class="tipInfo">${d.info}</span>`);
+
+          map.call(tip);
 
           crash.vols.forEach((vol) => {
             const flightRoutes = {
@@ -193,42 +198,47 @@
                 [vol.departure.longitude, vol.departure.latitude],
                 [vol.destination.longitude, vol.destination.latitude],
               ],
+              info: vol.nom,
             };
 
             map.insert('path', '.graticule')
               .datum(flightRoutes)
               .attr('class', 'flightpaths')
               .attr('d', path)
-              .on('mouseover', function hover() {
+              .on('mouseover', function hover(d) {
                 const c = d3.select(this);
                 c.transition().duration(250).style('stroke', '#42DCA3');
-                annotation.text(vol.nom);
-                annotation.transition().duration(250).style('opacity', '1');
+                tip.show(d);
               })
-              .on('mouseout', function hover() {
+              .on('mouseout', function hover(d) {
                 const c = d3.select(this);
                 c.transition().duration(250).style('stroke', 'white');
-                annotation.transition().duration(250).style('opacity', '0');
+                tip.hide(d);
               });
           });
 
-          const circle = d3.geoCircle()
-            .center([crash.coord.longitude, crash.coord.latitude])
-            .radius(1);
+          const crashPoint = {
+            type: 'Point',
+            coordinates: [crash.coord.longitude, crash.coord.latitude],
+            info: crash.coord.nom,
+          };
+
+          // const circle = d3.geoCircle()
+          //   .center([crash.coord.longitude, crash.coord.latitude])
+          //   .radius(1);
           map.insert('path', '.graticule')
-            .datum(circle)
+            .datum(crashPoint)
             .attr('class', 'placeCrash')
             .attr('d', path)
-            .on('mouseover', function hover() {
+            .on('mouseover', function hover(d) {
               const c = d3.select(this);
               c.transition().duration(250).style('fill', '#42DCA3');
-              annotation.text(crash.coord.nom);
-              annotation.transition().duration(250).style('opacity', '1');
+              tip.show(d);
             })
-            .on('mouseout', function hover() {
+            .on('mouseout', function hover(d) {
               const c = d3.select(this);
               c.transition().duration(250).style('fill', 'white');
-              annotation.transition().duration(250).style('opacity', '0');
+              tip.hide(d);
             });
         });
       });
