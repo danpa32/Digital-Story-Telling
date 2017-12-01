@@ -47,7 +47,12 @@
 
     <!-- Map Section -->
     <div id="map"></div>
-    <div id="annotation" class="text-center h2 py-2"></div>
+    <div id="legend" class="py-2">
+      <ul>
+        <li><svg width="50", height="20"><path class="flightpaths" d="M0,10L50,10"></path></svg> Planned flight path</li>
+        <li><svg width="50", height="20"><path class="placeCrash" d="M25,10m0,10a10,10 0 1,1 0,-20a10,10 0 1,1 0,20z"></path></svg> Crash site</li>
+      </ul>
+    </div>
 
     <div id="sections">
       <section class="content-section text-justify">
@@ -117,9 +122,6 @@
           </div>
         </div>
       </section>
-    </div>
-
-    <div id="legend">
     </div>
 
     <!-- Footer -->
