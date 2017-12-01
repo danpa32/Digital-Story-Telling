@@ -1,3 +1,6 @@
+/**
+ * Slightly modified from https://github.com/vlandham/scroll_demo
+ */
 {
   const { d3, topojson } = window;
 
@@ -6,7 +9,6 @@
    * of figuring out which section
    * the user is currently scrolled
    * to.
-   *
    */
   function scroller() {
     let container = d3.select('body');
@@ -38,7 +40,7 @@
       // of the first section.
       sectionPositions = [];
       let startPos;
-      sections.each(function (d, i) {
+      sections.each(function pos(d, i) {
         const { top, bottom } = this.getBoundingClientRect();
         if (i === 0) {
           startPos = top;
@@ -56,7 +58,7 @@
      *
      */
     function position() {
-      const pos = window.pageYOffset - containerStart + window.innerHeight / 2;
+      const pos = (window.pageYOffset - containerStart) + (window.innerHeight / 2);
       let sectionIndex = d3.bisect(sectionPositions, pos);
       sectionIndex = Math.min(sections.size() - 1, sectionIndex);
 
