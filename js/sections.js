@@ -145,8 +145,8 @@
    */
   function init() {
     d3.queue()
-      .defer(d3.json, '/resources/world-110m.json')
-      .defer(d3.json, '/resources/crash_data.json')
+      .defer(d3.json, 'resources/world-110m.json')
+      .defer(d3.json, 'resources/crash_data.json')
       .await((error, worldData, crashesData) => {
         if (error) throw error;
         world = worldData;
