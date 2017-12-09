@@ -6,6 +6,8 @@ We use a [Bootstrap template](https://startbootstrap.com/template-categories/all
 
 The website is hosted on GitHub Pages and can be found [here](https://danpa32.github.io/Digital-Story-Telling/).
 
+The data used for our website were taken from different resources. If you want to consult them, a list can be found [here](https://danpa32.github.io/Digital-Story-Telling/resources/links) or you can use our preprocess data ([here](https://danpa32.github.io/Digital-Story-Telling/resources/crash_data.json)). 
+
 ## Build and run
 
 1. You need to place yourself in the **Digital-Story-Telling repository**
